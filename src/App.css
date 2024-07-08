@@ -1,38 +1,81 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.App{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 100vh;
+  height: 80vh;
+  background-color: rgb(37 66 74);
+  border: solid 4px white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.opt select{
+  width: 100%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: larger;
+  margin-bottom: 20px;
+}
+
+
+.divinp input{
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: larger;
+  padding-left: 10px;
+}
+
+.divinp{
+ color: aliceblue;
+}
+
+.title{
   text-align: center;
+  color: aliceblue;
+  font-size: 150%;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  width: 100%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: larger;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ans{
+  color: rgb(174, 250, 153);
+  font-size: larger;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 650px){
+  .App{
+    width: 90%;
+    height: 100%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .divinp input{
+    width: 97%;
+    
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
