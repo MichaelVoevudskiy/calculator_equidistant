@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../eq/Eq.css'
 
+
 const Eq = () => {
   const [val, setVal] = useState('kontur')
   const [mustBe, setMustBe] = useState(0)
@@ -26,7 +27,6 @@ const Eq = () => {
       if (a < 0) a = a * (-1)
       setRes(a);
     }
-
   }
 
   return (
@@ -62,6 +62,7 @@ const Eq = () => {
       <div className='ans'>
         <div>Встановіть нове значення еквідистанти  = {res} mm</div>
       </div>
+      
     </div>
   )
 }

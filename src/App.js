@@ -4,8 +4,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import Eq from './components/eq/Eq.jsx';
 import MainPage from './components/MainPage/MainPage.jsx';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
-import Bands from './components/Bands/Bands.jsx';
-
+import Сhamfers from './components/Сhamfers/Сhamfers.jsx';
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='' element={<MainPage />}/>
-          <Route path='/Bands' element={<Bands />}/>
+          <Route path='/Сhamfers' element={<Сhamfers />}/>
           <Route path='/Eq' element={<Eq />}/>
         </Routes>
       </div>

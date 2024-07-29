@@ -2,9 +2,12 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 
 const Navbar = () =>{
+
+  const st = navData => navData.isActive ? 'active' : 'menu'
     return <div className='Navbar'>
-        <NavLink to='/Eq' className='menu'>Калькулятор еквідистанти</NavLink>
-        <NavLink to='/Bands' className='menu'>Калькулятор Bending</NavLink>
+      <NavLink className='menu' to='/'>Main Page</NavLink>
+        <NavLink to='/Eq' className={st}>Калькулятор еквідистанти</NavLink>
+        <NavLink to='/Сhamfers' className={st}>Калькулятор Фасок</NavLink>
       </div>
 }
 
