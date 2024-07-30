@@ -38,7 +38,7 @@ const Eq = () => {
       <div className='info'>3.Розмір який отримали</div>      
       <div className='info'>4.Еквідистанта на якій робили тест</div>      
       <div className='opt'>
-        <div className='divinp'>1. Для чего:</div>
+        <div className='divinp'>1. Для чого:</div>
         <select onChange={getOption}>
           <option value={'kontur'}>Для контура</option>
           <option value={'otverst'}>Для отворів</option>
