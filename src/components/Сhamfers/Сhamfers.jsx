@@ -45,8 +45,8 @@ const Сhamfers = () => {
 
     return (
         <div>
-            <div className="title">Розрахунок фасок</div>
-            <div className="info">Розрахунок фасок</div>
+            <div className='title'>Розрахунок фасок</div>
+           
             <div className={st.inp}>
                 <div className={st.dviimg}>
                     <img src={СhamfersImg} alt="" />
