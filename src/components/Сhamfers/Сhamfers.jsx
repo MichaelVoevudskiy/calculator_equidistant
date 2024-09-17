@@ -54,15 +54,15 @@ const Сhamfers = () => {
                 <div className={st.datatext}>
                     <div className={st.inpdata}>
                         <div>A</div>
-                        <input type="number" className={st.inpdata} onChange={event => setA(event.target.value)} />
+                        <input type="number" value={a} className={st.inpdata} onChange={event => setA(event.target.value)} />
                     </div>
                     <div className={st.inpdata}>
                         <div>B</div>
-                        <input type="number" className={st.inpdata} onChange={event => setB(event.target.value)} />
+                        <input type="number" value={b} className={st.inpdata} onChange={event => setB(event.target.value)} />
                     </div>
                     <div id='idl' className={st.inpdata}>
                         <div>L</div>
-                        <input type="number" className={st.inpdata} onChange={event => setL(event.target.value)} />
+                        <input type="number" value={L} className={st.inpdata} onChange={event => setL(event.target.value)} />
                     </div>
                     <button className={st.bt} onClick={calc}>Calc</button>
                 </div>

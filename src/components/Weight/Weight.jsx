@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import st from './Weight.module.css'
+import Usage from './Usage';
+import st from './Weight.module.css';
 
 
 const Weight = () => {
 
-    const [material, setMaterial] = useState();
+    const [material, setMaterial] = useState(2.4);
     const [WeightMat, setWeightMat] = useState();
     const [LightMat, setLightMat] = useState();
     const [SMat, setSMat] = useState();
     const [result, setResult] = useState();
-    // const [prosent, setProsent] = useState();
+
 
     const calc = () => {
             let ss = (WeightMat/1000) * (LightMat/1000)* SMat * material
@@ -55,14 +56,8 @@ const Weight = () => {
             <div><button className={st.bt} onClick={calc}>Calc</button></div>
             <div className={st.ans}>Теоритична вага: {result} кг</div>
             
-            {/* <div className={st.inptext2}>
-                % використання:
-                <input type="number" onChange={event => setProsent(event.target.value)} />
-                %
-            </div>
-            <div className={st.text}>вага заготовки: {result} кг</div>
-            <div className={st.text}>вага деталей:   {result} кг</div>
-            <div className={st.text}>вага залишків:  {result} кг</div> */}
+            <Usage result={result} />
+
         </div>
     )
 }
