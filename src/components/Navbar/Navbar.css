@@ -1,0 +1,37 @@
+.menu{
+    color: aliceblue;
+    border: solid 2px #339990;
+    background-color: #339899;
+    padding: 5px;
+    text-decoration: none;
+    margin: 5px;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .active{
+    color: aliceblue;
+    border: solid 2px #339990;
+    background-color: #0f4b4d;
+    padding: 5px;
+    text-decoration: none;
+    margin: 5px;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+  }
+
+ .Navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 650px){
+    .Navbar{
+      display: block;
+      unicode-bidi: isolate;
+    }
+
+  }
