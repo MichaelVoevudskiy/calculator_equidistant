@@ -22,7 +22,7 @@ const Eq = () => {
     }
 
     else {
-      let a = ((((Number(mustBe) - Number(exists)) / 2) - Number(eqv)) * 10) / 10
+      let a = ((((Number(mustBe) - Number(exists))) - Number(eqv)) * 10) / 10
       a = a.toFixed(2)
       if (a < 0) a = a * (-1)
       setRes(a);
