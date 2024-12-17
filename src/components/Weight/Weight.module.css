@@ -44,4 +44,12 @@
 .ans{
     color: rgb(110, 255, 146);
     margin-top: 10px;
+    font-size: large;
+}
+
+.box{
+    border: solid 1px #ffffff6b;
+    margin: 3px;
+    border-radius: 3px;
+    padding: 5px;
 }

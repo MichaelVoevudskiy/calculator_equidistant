@@ -20,13 +20,13 @@ const Weight = () => {
 
     return (
         <div>
+            <div className={st.box}>
             <div className={st.title}>
                 Калькулятор ваги матеріалу
             </div>
 
             <div className={st.inptext}>
                 Матеріал:
-
                 <select onChange={event => setMaterial(event.target.value)}>
                     <option value={2.4}>Мармур</option>
                     <option value={2.6}>Граніт</option>
@@ -36,26 +36,30 @@ const Weight = () => {
                     <option value={8.73}>Латунь</option>
                     <option value={2.7}>Алюміній</option>
                 </select>
-
             </div>
+
             <div className={st.inptext}>
                 Довжина:
                 <input type="number" onChange={event => setLightMat(event.target.value)} />
                 mm
             </div>
+
             <div className={st.inptext}>
                 Ширина:
                 <input type="number" onChange={event => setWeightMat(event.target.value)} />
                 mm
             </div>
+
             <div className={st.inptext}>
                 Товщина:
                 <input type="number" onChange={event => setSMat(event.target.value)} />
                 mm
             </div>
+
             <div><button className={st.bt} onClick={calc}>Calc</button></div>
+
             <div className={st.ans}>Теоритична вага: {result} кг</div>
-            
+            </div>
             <Usage result={result} />
 
         </div>
