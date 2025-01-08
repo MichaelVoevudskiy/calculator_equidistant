@@ -9,7 +9,7 @@ const Сhamfers = () => {
     const [a, setA] = useState()
     const [b, setB] = useState()
     const [L, setL] = useState()
-    const [ans, setAns] = useState()
+    // const [ans, setAns] = useState()
 
     const calc = () => {
 
@@ -18,7 +18,7 @@ const Сhamfers = () => {
             ang = (Math.atan(ang)) / 0.0174533
             ang = Math.round(ang * 100) / 100
             console.log("ans ang=" + ang)
-            setAns("ans ang=" + ang)
+            // setAns("ans ang=" + ang)
             setL(ang)
         }
 
@@ -28,7 +28,7 @@ const Сhamfers = () => {
             calcA = Math.round(calcA * 100) / 100
             calcA = calcA * b
             console.log("ans A =" + calcA)
-            setAns("ans A =" + calcA)
+            // setAns("ans A =" + calcA)
             setA(calcA)
         }
 
@@ -38,7 +38,7 @@ const Сhamfers = () => {
             calcB = Math.round(calcB * 100) / 100
             calcB = calcB * a
             console.log("ans B=" + calcB)
-            setAns("ans B=" + calcB)
+            // setAns("ans B=" + calcB)
             setB(calcB)
         }
     }
