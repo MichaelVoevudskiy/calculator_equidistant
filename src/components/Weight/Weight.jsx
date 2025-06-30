@@ -35,6 +35,7 @@ const Weight = () => {
                     <option value={8.96}>Мідь</option>
                     <option value={8.73}>Латунь</option>
                     <option value={2.7}>Алюміній</option>
+                    <option value={1.1}>Гума</option>
                 </select>
             </div>
 
